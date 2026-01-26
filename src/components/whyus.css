@@ -1,0 +1,79 @@
+.whyus-container{
+    position:relative;
+    width: fit-content;
+}
+.whyusmain{
+    width: 80%;
+    margin: 40px;
+    width: 400px;
+    display: block;
+}
+.whyusleft{
+    position: absolute;
+    bottom: 80px;
+    left: -40px;
+   /* width: 30%; */
+}
+
+.whyusleft img {
+    width: 160px;
+    border-radius: 6px;
+    box-shadow: 0 0px 20px rbga(0,0,0,0.2);
+}
+
+.card{
+    /* height: 180px;
+    width: 170px;
+    background-color: blue;
+    text-wrap: inherit;
+    padding: 0 9px; */
+     position: absolute;
+  bottom: -30px;
+  right: -40px;
+
+  background-color: #2f56d6;
+  color: white;
+  padding: 20px;
+  width: 220px;
+}
+.card span {
+    color: green;
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.card h2 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .whyusleft {
+    left: 0;
+    bottom: 40px;
+  }
+
+  .card {
+    right: 0;
+    bottom: -20px;
+    width: 180px;
+  }
+
+}
+@media screen and (min-width:768px) {
+  
+    .content{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .content{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+  }
+}

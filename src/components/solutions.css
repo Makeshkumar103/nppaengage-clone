@@ -1,0 +1,67 @@
+.solutions-grid{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.solution-card {
+  height: 300px;
+  border-radius: 12px;
+  padding: 20px;
+  /* color: #fff; */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* gap: 1rem; */
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+/* optional overlay for text readability */
+.solution-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+.solution-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width:768px) {
+  .solutions-grid{
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .solution-card{
+    /* display: flex; */
+    /* flex-direction: row; */
+    width: 300px;
+    /* align-items: center; */
+    gap: 24px;
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-content {
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+  }
+}

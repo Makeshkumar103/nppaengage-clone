@@ -1,0 +1,11 @@
+
+.stats{
+  /* text-align: center; */
+  margin: 4rem 0;
+  background-image: url("../assets/photos/market-focus-mobile.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 2rem;
+}

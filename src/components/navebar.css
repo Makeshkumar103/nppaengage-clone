@@ -1,0 +1,132 @@
+/* Base */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+.navbar-links a:hover{
+  border: solid 2px blue;
+  border-radius: 20px;
+  color: blue;
+  padding: 0.5rem 1rem;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 1rem;
+}
+.nav-btns *:first-child{
+  background-color: blue;
+  border-radius: 20px;
+  color:white;
+  padding: 0.5rem 1rem;
+}
+
+.btn {
+  /* padding: 0.5rem 1.5rem; */
+  /* border-radius: 999px; */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+
+  border-radius: 20px;
+  /* color: white; */
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background-color: #1e5c8b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 1rem; */
+  z-index: 100;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  text-align: center;
+  /* background-color: gray; */
+}
+
+.mobile-menu li {
+  /* padding: 0; */
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+}
+.mobile-menu a:hover{
+  border: solid 2px white;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+}
+
+.mobile-buttons {
+  display: flex;
+  flex-direction: column;
+  /* background-color: yellow; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 1rem;
+}
+.mobile-menu button .close-btn{
+  border: none;
+}
+
+.mobile-menu .close-btn {
+  border: none;
+  /* align-self: flex-end; */
+  margin-left: 300px;
+}
+
+/* Button styles in mobile */
+.btn.white {
+  background: white;
+  color: #1e5c8b;
+}
+
+.btn.transparent {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

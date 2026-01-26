@@ -1,0 +1,81 @@
+
+/* Clients */
+/* .clients{
+  text-align: center;
+  margin: 4rem 0;
+}
+.clients .client-logos{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.clients .client-logos img{
+  max-width: 150px;
+  height: auto;
+} */
+
+.clients{
+  margin: 1rem;
+}
+.clients .cta-button{
+  border: solid 1px;
+  background-color: #007bff;
+  border-radius: 5rem;
+  display: inline-block;
+  padding: 5px 20px;
+  margin-top: 2rem;
+ 
+}
+.clients .cta-button button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.brand-banner {
+  width: 100%;
+  overflow: hidden;
+  background:transparent;
+  padding: 20px 0;
+}
+
+.brand-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.brand-item {
+  flex: 0 0 auto;
+  padding: 0 40px;
+}
+
+.brand-item img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.brand-item img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
