@@ -1,12 +1,24 @@
-footer{
-  margin-top: 2rem;
-  /* background-color: gray; */
+footer {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  margin: auto;
+}
+footer img{ 
+  height: 100px;
+  width: 200px; 
+}
+
+footer ul {
+  padding: 0px;
 }
 
 footer ul li {
   list-style: none;
   font-weight: 600;
-  margin: 0.5rem 0;
+  margin-left: 0px;
+  /* margin: 0.5rem 0; */
 }
 
 footer ul li:first-child{
@@ -25,23 +37,40 @@ footer .icons {
 footer ul li a{
   text-decoration: none;
 }
-.bg{
+
+/* .bg{
   background-color: #2c2c2c;
   color: white;
-}
+  padding: 1rem;
+  width: 100%;
+  margin: auto;
+} */
 
-@media screen and (min-width:768px) {
+ @media screen and (min-width:768px) {
+  footer img {
+  height: 100px;
+  width: 200px;
+  }
   .footer-content{
     display: flex;
     flex-direction: row;
+    /* background-color: yellow; */
     gap: 24px;
   }
-}
+} 
 
 @media screen and (min-width: 1024px) {
+   footer img {
+  height: 200px;
+  width: 300px;
+  }
+
   .footer-content {
-    max-width: 1200px;
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: tomato;
     gap: 40px;
   }
 }

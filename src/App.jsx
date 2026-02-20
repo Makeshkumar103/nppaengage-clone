@@ -1,6 +1,4 @@
-import { useState } from 'react'
-
-import './App.css'
+// import './App.css'
 import Footer from './components/Footers.jsx'
 import Testimonial from './components/Testimonial.jsx'
 import Test1 from './components/Test1.jsx'
@@ -17,13 +15,13 @@ function App() {
     <>
       {/* <Navebar /> */}
       <Bar />
-      <Home />
-      <WhyUs />
-      <Stats />
-      <Solutions />
+      {/* <Home /> */}
+      {/* <WhyUs /> */}
+      {/* <Stats /> */}
+      {/* <Solutions /> */}
       {/* <Test1 /> */}
-      <Testimonial />
-      <Clients />
+      {/* <Testimonial /> */}
+      {/* <Clients /> */}
       <Footer />
     </>
   )

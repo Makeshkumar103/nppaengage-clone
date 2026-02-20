@@ -1,10 +1,11 @@
 import React from 'react';
 import './footer.css';
 import logo from '../assets/photos/nppaLogoLight.webp';
+
 const Footer = () => {
     return (
-    <footer className='container bg'>  
-        <img src={logo} height={100} width={200} alt="logo" /> 
+    <footer>  
+        <img src={logo} alt="logo" /> 
         <div className='footer-content'> 
             <ul>
                 <li>About Us</li>
